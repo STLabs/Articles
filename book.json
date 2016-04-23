@@ -1,0 +1,23 @@
+{
+    "plugins": [
+        "highlight",
+        "include-highlight",
+        "js-sequence-diagram",
+        "rss"
+    ],
+    "pluginsConfig": {
+        "rss": {
+            "title": "Amber Star Journal",
+            "description": "",
+            "generator": "",
+            "site_url": "https://github.com/amberstar/Journal",
+            "feed_url": "https://github.com/amberstar/Journal/blob/fees.rss",
+            "image_url": "",
+            "managingEditor": "",
+            "webMaster": "",
+            "categories": "",
+            "copyright": "",
+            "language": ""
+        }
+    }
+}
