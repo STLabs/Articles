@@ -1,7 +1,6 @@
 # Summary
 
 * [About](README.md)
-* [Model View Component](drafts/ModelViewComponent.md)
 * [Behaviors - Introduction](drafts/Behaviors.md)
 * [The Component Pattern](articles/TheComponentPattern.md)
 * [Structure Behavior State](articles/StructureBehaviorState.md)
