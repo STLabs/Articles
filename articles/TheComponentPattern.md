@@ -36,7 +36,11 @@ A mutable value type can be a component. Mutating functions can be considered in
 
 #### Components vs. UI Components
 A component is not specific to UI,  although some components can be UI components.
+
+
 ---
+
+
 ###Notes:
 ###02/11/2016 
 
