@@ -26,7 +26,8 @@ A component is any composable type that has inputs and outputs
 
 * a component does not have methods that return values.
 * a component does not have public properties (because that is a method that returns a value.
-* 
+
+
 ### Components vs. Functions
 A function is a component with 1 input and 1 output. A component has N inputs, and N outputs.
 
