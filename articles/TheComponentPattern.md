@@ -20,18 +20,21 @@ The pattern asserts that an ideal system is composed as one hierarchy of compone
 
 
 ## What is a component?
-
-A component is any composable type that has inputs and outputs (usually Actions and Events)
-
+A component is any composable type that has inputs and outputs  
 
 ###Components vs. Objects
 
 * a component does not have methods that return values.
-* a component does not have public properties (because that is actually a method that returns a value.
-
+* a component does not have public properties (because that is a method that returns a value.
+* 
 ### Components vs. Functions
 A function is a component with 1 input and 1 output. A component has N inputs, and N outputs.
 
+### Components vs. Value types
+A mutable value type can be a component. Mutating functions can be considered inputs (providing they do not return values). The output of a value type component is itself upon mutation. 
+
+### Components vs. UI Components
+A component is not specific to UI,  although some components can be UI components.
 
 ###02/11/2016 
 
