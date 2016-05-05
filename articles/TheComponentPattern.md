@@ -32,7 +32,7 @@ A component is any composable type that has inputs and outputs
 A function is a component with 1 input and 1 output. A component has N inputs, and N outputs.
 
 ### Components vs. Value types
-A mutable value type can be a component. Mutating functions can be considered inputs (providing they do not return values). The output of a value type component is itself upon mutation. 
+A mutable value type can be a component. Mutating functions can be considered inputs (if they do not return values). The output of a value type component is itself upon mutation. 
 
 ### Components vs. UI Components
 A component is not specific to UI,  although some components can be UI components.
