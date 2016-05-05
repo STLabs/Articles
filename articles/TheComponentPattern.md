@@ -22,11 +22,16 @@ The pattern asserts that an ideal system is composed as one hierarchy of compone
 ## What is a component?
 A component is any composable type that has inputs and outputs  
 
+
+
 ####Components vs. Objects
 
 * a component does not have methods that return values.
 * a component does not have public properties (because that is a method that returns a value.
 
+Why do components have inputs and outputs, instead of properties or methods with return values?
+
+This is due to the fact that methods with return values are harmful to software structure. You can not compose a graph with return values. Because the return value is only returned to the caller, not all child nodes of the component.
 
 #### Components vs. Functions
 A function is a component with 1 input and 1 output. A component has N inputs, and N outputs.
@@ -39,6 +44,16 @@ A component is not specific to UI,  although some components can be UI component
 
 
 ---
+
+## Component Anatomy 
+
+
+
+- Inputs : 
+- Outputs : 
+- State:
+- Sub Components:
+
 
 
 ###Notes:
