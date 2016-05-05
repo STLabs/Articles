@@ -3,3 +3,4 @@
 
 
 
+![](../resources/images/Component.svg)
