@@ -21,33 +21,16 @@ The pattern asserts that an ideal system is composed as one hierarchy of compone
 
 ## What is a component?
 
-The simplest way to describe a component is that it's a box with N inputs and N outputs. 
+A component is any composable type that has inputs and outputs (usually Actions and Events)
 
-What's the box for? 
 
-1. It contains more boxes
-2. It contains the state of the box
-3. It contains the behavior of the box
-
-This sounds like an object you say? Yes it does. But there are a few key differences. Remember when I said it's a box with N inputs, and N outputs? That is different than an object. An object has methods that return values to the caller. When you send input into a components input, some output comes out one of it's outputs. It has to, or there would be no reason to send it input in the first place.
-
-It turns out (I believe) that methods that return values (and public properties) are bad for software composition. 
-
-You know how (pure)functions compose really nice, and they can call other functions and they never get all tangled up in a knot? Well a pure function is a component. It's a component with one input and one output. It's the simplest form of a component. I am asserting that a function is just one form of something I am calling a component.
-
-Components can be implemented as objects. Inputs can be methods, but the methods do not return values. 
+###Components vs. Objects
 
 * a component does not have methods that return values.
 * a component does not have public properties (because that is actually a method that returns a value.
 
-
-The outputs of a component can be implemented in different ways. (Observable, Callbacks, Delegates, Notifications) It doesn't matter how, it only matters that these messages are outputs. 
-
-
-A good question to ask about your system is, is it one tree, or two trees? Is the UI a tree separate from the state tree?  What about the behavior tree? I believe it should be one tree of a Model, View, and Controller fractal. All three must compose, or you will always be fighting trying to get messages in and out of these trees.
-
-This is why I see view controllers as sub-components. They are sub components of an application component.![](../resources/images/Component2.png)
-
+### Components vs. Functions
+A function is a component with 1 input and 1 output. A component has N inputs, and N outputs.
 
 
 ###02/11/2016 
