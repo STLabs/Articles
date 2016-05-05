@@ -38,7 +38,7 @@ This is due to the fact that methods with return values are harmful to software 
 #### Components vs. Functions
 A function is a component with 1 input and 1 output. A component has N inputs, and N outputs.
 
-
+![](../resources/images/Functions.svg)
 
 #### Components vs. Value types
 A mutable value type can be a component. Mutating functions can be considered inputs (if they do not return values). The output of a value type component is itself upon mutation. 
@@ -50,7 +50,6 @@ A component is not specific to UI,  although some components can be UI component
 ---
 
 ## Component Anatomy 
-
 
 
 - Inputs : 
