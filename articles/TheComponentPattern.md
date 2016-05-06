@@ -22,14 +22,15 @@ The pattern asserts that an ideal system is composed as one hierarchy of compone
 ## What is a component?
 A component is any composable type that has inputs and outputs  
 
-![](../resources/images/Component_Connected.svg)
+
 
 ####Components vs. Objects
 
 * a component does not have methods that return values.
 * a component does not have public properties (because that is a method that returns a value.
+![](../resources/images/Components.png)
 
-![](../resources/images/ObjectWithMethod.svg![](../resources/images/Components.png)
+![](../resources/images/Object.png)
 
 Why do components have inputs and outputs, instead of properties or methods with return values?
 
