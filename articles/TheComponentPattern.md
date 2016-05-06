@@ -32,10 +32,6 @@ A component is any composable type that has inputs and outputs
 
 ![](../resources/images/Object.png)
 
-Why do components have inputs and outputs, instead of properties or methods with return values?
-
-This is due to the fact that methods with return values are harmful to software structure. You can not compose a graph with return values. Because the return value is only returned to the caller, not all child nodes of the component.
-
 #### Components vs. Functions
 A function is a component with 1 input and 1 output. A component has N inputs, and N outputs.
 
