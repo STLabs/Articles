@@ -29,7 +29,7 @@ A component is any composable type that has inputs and outputs
 * a component does not have methods that return values.
 * a component does not have public properties (because that is a method that returns a value.
 
-![](../resources/images/ObjectWithMethod.svg)
+![](../resources/images/ObjectWithMethod.svg![](../resources/images/Components.png)
 
 Why do components have inputs and outputs, instead of properties or methods with return values?
 
@@ -38,7 +38,7 @@ This is due to the fact that methods with return values are harmful to software 
 #### Components vs. Functions
 A function is a component with 1 input and 1 output. A component has N inputs, and N outputs.
 
-![](../resources/images/Functions.svg)
+![](../resources/images/Functions.png)
 
 #### Components vs. Value types
 A mutable value type can be a component. Mutating functions can be considered inputs (if they do not return values). The output of a value type component is itself upon mutation. 
