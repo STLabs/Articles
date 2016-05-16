@@ -1,4 +1,4 @@
-#Messaging
+#Messaging and The Significance of an "Output"
 
 ### Why components need outputs, not public methods and properties.
 
