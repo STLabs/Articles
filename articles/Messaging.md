@@ -1,6 +1,6 @@
 #Messaging
 
-### Why components need outputs instead of public methods and properties.
+### Why components need outputs, not public methods and properties.
 
 When asked about the meaning of Object Oriented Programming Alan Kay once said: 
 
