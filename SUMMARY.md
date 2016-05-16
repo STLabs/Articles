@@ -1,6 +1,7 @@
 # Summary
 
 * [About](README.md)
+* Messaging
 * [The Component Pattern](articles/TheComponentPattern.md)
 * [Structure Behavior State](articles/StructureBehaviorState.md)
 * [Turning Objects into Functions](articles/TurningObjectsIntoFunctions.md)
@@ -8,5 +9,4 @@
 * [Views are controls](articles/ViewsAreControls.md)
 * [For The Love of Software](articles/ForTheLoveOfSoftware.md)
 * [Recommended Reading / Viewing](pages/RecommendedReadingViewing.md)
-* Messaging
 
