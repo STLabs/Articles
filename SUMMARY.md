@@ -1,7 +1,7 @@
 # Summary
 
 * [About](README.md)
-* Messaging
+* [Messaging](articles/Messaging.md)
 * [The Component Pattern](articles/TheComponentPattern.md)
 * [Structure Behavior State](articles/StructureBehaviorState.md)
 * [Turning Objects into Functions](articles/TurningObjectsIntoFunctions.md)
