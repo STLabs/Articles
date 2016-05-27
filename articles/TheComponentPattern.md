@@ -21,7 +21,7 @@ There are two primary underlying principles:
 
 The pattern asserts that an ideal system is composed as one hierarchy of components. 
 
-1. There is no separate state tree.
+1. There is no separate state or UI tree.
 2. Child components do not dispatch actions specific to the parent, they dispatch processed input, or perhaps no output at all.
 
 ## What is a component?
