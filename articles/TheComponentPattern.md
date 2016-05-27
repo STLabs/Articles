@@ -8,9 +8,9 @@ The goals are:
 
 
  A system composed from components. Arrows pointing in represent action methods. Arrows pointing out represent events. Outer component reacts to events of inner components. This keeps dependencies pointing inward. With composition of calls made inward, and events outward, no inner component is dependent on an outer component. Because the dependencies flow in the direction of composition of the system , the dependencies are inherent in the system itself.
-
-
-The pattern is for composing software from "Components". It is intentionally simple and abstract and doesn't require a library or a framework. It is just an idea.
+##Composition
+![](../resources/images/Component_Composition.png)
+The pattern is for composing software from "Components". It is intentionally simple and abstract and doesn't require a library or a framework. It is just an pattern.
 
 There are two primary underlying principles: 
 1. Software has three distinct axis: Structure, behavior, and state.
