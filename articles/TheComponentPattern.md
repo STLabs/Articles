@@ -11,7 +11,7 @@ The Component Pattern is a pattern in well structured systems. Software systems 
  
  
 ##Composition
-![](../resources/images/Component_Composition.png)
+
 
 
 There are two primary underlying principles:
@@ -23,7 +23,7 @@ The pattern asserts that an ideal system is composed as one hierarchy of compone
 
 1. There is no separate state or UI tree.
 2. Child components do not dispatch actions specific to the parent, they dispatch processed input, or perhaps no output at all.
-
+![](../resources/images/Component_Comp.png)
 ## What is a component?
 1. A component is any composable type that has inputs and outputs.
 2. Child components are inherently dependent on facts provided by it's input.
