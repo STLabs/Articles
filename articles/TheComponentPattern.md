@@ -74,3 +74,12 @@ Data should flowing in the direction of the components composition.
 
 As stated before : 
 > Because the dependencies flow in the direction of composition of the system , the dependencies are inherent in the system itself.
+
+### 05/27/2016
+### 3 dimensional Component Data Flow in the X Y and Z axis.
+We can think of the the component pattern in 3 dimensions. The Y axis, is the data flow from parent to child, and back to parent. The X axis is synchronous processing from input to output. The Z axis is asynchronous processing and 3rd dimension of the pattern, emanating from and back to the XY plane.
+
+If a component need to do asynchronous processing on another thread. The result comes back to the original plane, and output. For example fetching data:
+
+1. Input comes in to request data.
+2. The asynchronous process occurs in the Z axis, which is an output in that axis. Result or failure occurs in the Z axis. Result is output in the x axis.
