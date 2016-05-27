@@ -79,6 +79,7 @@ As stated before :
 ### 3 Dimensional Data Flow in the X Y and Z axis.
 We can think of the the component pattern in 3 dimensions. The Y axis, is the data flow from parent to child, and back to parent. The X axis is synchronous processing from input to output. The Z axis is asynchronous processing and 3rd dimension of the pattern, emanating from and back to the XY plane.
 
+![](../resources/images/3D.png)
 If a component need to do asynchronous processing on another thread. The result comes back to the original plane, and output. For example fetching data:
 
 1. Input comes in to request data.
