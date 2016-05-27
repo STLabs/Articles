@@ -15,6 +15,7 @@ The Component Pattern is a pattern in well structured systems. Software systems 
 
 
 There are two primary underlying principles:
+
 1. Software has three distinct axis: Structure, behavior, and state.
 2. Programming is an art of organization. Good structure supports good organization.
 
