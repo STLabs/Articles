@@ -87,4 +87,4 @@ We can think of the the component pattern in 3 dimensions.
 If a component needs to do asynchronous processing on another thread. The result comes back to the original plane, and output. For example fetching data:
 
 1. Input comes in to request data.
-2. The asynchronous process occurs in the Z axis, which is an output in that axis. Result or failure occurs in the Z axis. Result is output in the x axis.
+2. The asynchronous process occurs in the Z axis, which is an output in that axis. ( a child component). Result or failure occurs in the Z axis. Result is output in the X axis.
