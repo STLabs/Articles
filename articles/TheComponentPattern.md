@@ -1,26 +1,34 @@
 # The Component Pattern
 
-The Component Pattern is a pattern I have identified in well structured systems. Software systems are a combination of structure, behavior, and state. Components define the structure of software systems. They are objects that have Actions, and Events. Components of a system are composed together in the pattern shown below. 
-The goals are: 
+The Component Pattern is a pattern I have identified in well structured systems. Software systems are a combination of structure, behavior, and state. Components define the structure of software systems. Components have inputs and outputs. Components of a system are composed together in the pattern shown below. 
+
 
 ![](../resources/images/ComponentPattern.jpg)
 
 
 
- A system composed from components. Arrows pointing in represent action methods. Arrows pointing out represent events. Outer component reacts to events of inner components. This keeps dependencies pointing inward. With composition of calls made inward, and events outward, no inner component is dependent on an outer component. Because the dependencies flow in the direction of composition of the system , the dependencies are inherent in the system itself.
+ A system composed from components. Arrows pointing in represent inputs. Arrows pointing out represent outputs. Outer component process output of inner child components. This keeps dependencies pointing inward. With composition of input made inward, and output outward, no inner component is dependent on an outer component. Because the dependencies flow in the direction of composition of the system , the dependencies are inherent in the system itself.
+ 
+ The pattern is for composing software from "Components". It is intentionally simple and abstract and doesn't require a library or a framework. It is simply a pattern. How the pattern is implemented is not specified.
+ 
 ##Composition
 ![](../resources/images/Component_Composition.png)
-The pattern is for composing software from "Components". It is intentionally simple and abstract and doesn't require a library or a framework. It is just an pattern.
 
-There are two primary underlying principles: 
+
+There are two primary underlying principles:
 1. Software has three distinct axis: Structure, behavior, and state.
 2. Programming is an art of organization. Good structure supports good organization.
 
 The pattern asserts that an ideal system is composed as one hierarchy of components. 
 
+1. There is no separate state tree.
+2. Child components do not dispatch actions specific to the parent, they dispatch processed input, or perhaps no output at all.
 
 ## What is a component?
-A component is any composable type that has inputs and outputs  
+1. A component is any composable type that has inputs and outputs.
+2. Child components are inherently dependent on facts provided by it's input.
+3. Parent components are inherently interested in the facts provided by the output of it's children.
+4. Whether or not a component has state is irrelevant to the rest of the system. What matters is the output. 
 
 
 
