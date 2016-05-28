@@ -83,7 +83,7 @@ We can think of the the component pattern in 3 dimensions.
 2. The X axis represents connection and processing on the primary thread. 
 3. The Z axis represents asynchronous processing on a secondary thread, emanating from and back to the XY plane.
 
-![](../resources/images/3D.png)
+
 If a component needs to do asynchronous processing on another thread. The result comes back to the original plane, and output. For example fetching data:
 
 1. Input comes in to request data.
