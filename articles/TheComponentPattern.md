@@ -88,3 +88,5 @@ If a component needs to do asynchronous processing on another thread. The result
 
 1. Input comes in to request data.
 2. The asynchronous process occurs in the Z axis, which is an output in that axis. ( a child component). Result or failure occurs in the Z axis. Result is output in the X axis.
+3. 
+![](../resources/images/CrossSection2.png)
