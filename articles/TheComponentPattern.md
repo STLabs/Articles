@@ -8,19 +8,16 @@ The Component Pattern is a pattern to created well structured systems. Component
 
 The pattern asserts that an ideal system is composed as one hierarchy of components, starting with the application component.
 
-## What is a component?
-1. A component is any composable type that has input, a process, and output. (note: while a component may have multiple inputs and outputs, for reasoning purposes we consider the entire set of inputs and outputs as a whole.)
-2. Child components are inherently dependent on facts provided by input from it's parent.
-3. Parent components are inherently interested in the facts provided by the output of it's child components.
-
-
 ![](../resources/images/ComponentPattern.jpg)
 
 
 
  In the diagram above arrows pointing in represent input. Arrows pointing out represent output. Outer components are parents, that process output of inner child components. This keeps dependencies pointing inward. With composition of input made inward, and output outward, no inner component is dependent on an outer component until it is in a context. Because the dependencies flow in the direction of composition of the system , the dependencies are inherent in the context itself.
  
-
+## What is a component?
+1. A component is any composable type that has input, a process, and output. (note: while a component may have multiple inputs and outputs, for reasoning purposes we consider the entire set of inputs and outputs as a whole.)
+2. Child components are inherently dependent on facts provided by input from it's parent.
+3. Parent components are inherently interested in the facts provided by the output of it's child components.
 
 
  ![](../resources/images/Composition2.png)
