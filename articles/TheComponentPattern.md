@@ -23,7 +23,8 @@ The pattern asserts that an ideal system is composed as one hierarchy of compone
 
 1. There is no separate state or UI tree.
 2. Child components do not dispatch actions specific to the parent, they dispatch processed input, or perhaps no output at all.
-![](../resources/images/Component_Comp.png)
+
+![](../resources/images/Composition2.png)
 
 ## What is a component?
 1. A component is any composable type that has inputs and outputs.
@@ -88,5 +89,3 @@ If a component needs to do asynchronous processing on another thread. The result
 
 1. Input comes in to request data.
 2. The asynchronous process occurs in the Z axis, which is an output in that axis. ( a child component). Result or failure occurs in the Z axis. Result is output in the X axis.
-3. 
-![](../resources/images/CrossSection2.png)
