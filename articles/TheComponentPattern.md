@@ -4,15 +4,17 @@
 1. Software has three distinct axis: structure, behavior, and state.
 2. Programming is an art of organization. Good structure supports good organization.
 
-The component pattern is a pattern for creating well structured systems. Components define the structure of software systems. Components have inputs and outputs. Components of a system are composed together in the pattern shown in the diagram below.  This pattern is intentionally simple and abstract and doesn't require a library or a framework. 
+The component pattern is a pattern for creating well structured software. The pattern asserts that an ideal system is composed as one hierarchy of components, starting with the application component. It is intentionally abstract and doesn't require a library or a framework.
 
-The pattern asserts that an ideal system is composed as one hierarchy of components, starting with the application component.
+ 
+
+
 
 ![](../resources/images/ComponentPattern.jpg)
 
 
 
- In the diagram above arrows pointing in represent input. Arrows pointing out represent output. Outer components are parents, that process output of inner child components. This keeps dependencies pointing inward. With composition of input made inward, and output outward, no inner component is dependent on an outer component until it is in a context. Because the dependencies flow in the direction of composition of the system , the dependencies are inherent in the context itself.
+ Components define the structure of software and are are composed together as shown in the diagram above. Arrows pointing in represent input. Arrows pointing out represent output. Outer components are parent components of inner components. This keeps dependencies pointing inward and output outward.  No inner component is dependent on an outer component until it is in the context of it's parent. Because the dependencies flow in the direction of composition of the system , the dependencies are inherent in the system itself.
  
 ## What is a component?
 1. A component is any composable type that has input, a process, and output. (note: while a component may have multiple inputs and outputs, for reasoning purposes we consider the entire set of inputs and outputs as a whole.)
