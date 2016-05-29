@@ -24,8 +24,6 @@ The pattern asserts that an ideal system is composed as one hierarchy of compone
 
  ![](../resources/images/Composition2.png)
 
-
-
 ## Theory
 Components are composed of subcomponents as shown above. A component receives input, some process happens, and it produces output at some point in time.  An entire application is a component that takes it's initial state, and produces new state. 
 
