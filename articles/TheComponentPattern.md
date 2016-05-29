@@ -39,12 +39,20 @@ Keep in mind, this is all theory behind the component pattern. It can be express
 
 ---
 
-## Doesn't this already exist? / Is this even correct?
-I don't know. But I notice a lot of implementations of it, but have not seen anyone spell out a pattern to define the underlying principles. I discovered this in my own work, and then started noticing others seemingly evolving to these ideas as well. Whether or not it is correct or perfect, I don't know that either. I throw ideas out as soon as I prove them wrong. So far this has not been proven to me to be wrong, and it is still evolving.
+## Notes
+
+### May 29, 2016
+This is a learning project for me.  I got these ideas from my own work, and then discovered others seemingly thinking about these ideas as well.  I have not seen anyone spell out an underlying pattern so I did. Whether or not it is correct or perfect, I don't know that either. Probably not. I throw ideas out as soon as I prove them wrong or I iterate on them. So far this has proven to be a useful pattern, but it's still evolving.
+
+[Elm](http://elm-lang.org) is a very close implementation of this pattern. [Cycle.js](http://cycle.js.org) is another. [React/Redux](https://facebook.github.io/react/index.html) is also. However in my implementation of this pattern components are not just UI specific. Recently React added higher order components too.
+
+Another interesting simillar implementation of this pattern is [Flutter](https://flutter.io). 
+
+The fact that I am seeing others evolve towards this tells me there might be something to it. 
 
 
-###Notes:
-###02/11/2016 
+
+### Feb 11, 2016
 
 I was describing some rules for a UI design pattern and it occurred to me that these rules apply universally to the component pattern.
 
