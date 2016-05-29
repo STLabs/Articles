@@ -1,26 +1,27 @@
 # The Component Pattern
+ There are two primary underlying principles:
 
-The Component Pattern is a pattern in well structured systems. Software systems are a combination of structure, behavior, and state. Components define the structure of software systems. Components have inputs and outputs. Components of a system are composed together in the pattern shown below. The pattern is for composing software from "Components". It is intentionally simple and abstract and doesn't require a library or a framework. It is simply a pattern. How it is implemented is not specified.
+1. Software has three distinct axis: Structure, behavior, and state.
+2. Programming is an art of organization. Good structure supports good organization.
+
+The Component Pattern is a pattern to created well structured systems. Components define the structure of software systems. Components have inputs and outputs. Components of a system are composed together in the pattern shown in the diagram below.  This pattern is intentionally simple and abstract and doesn't require a library or a framework. 
+
+The pattern asserts that an ideal system is composed as one hierarchy of components, starting with the application component.
+
+## What is a component?
+1. A component is any composable type that has input, a process, and output. (note: while a component may have multiple inputs and outputs, for reasoning purposes we consider the entire set of inputs and outputs as a whole.)
+2. Child components are inherently dependent on facts provided input from it's parent.
+3. Parent components are inherently interested in the facts provided by the output of it's child components.
 
 
 ![](../resources/images/ComponentPattern.jpg)
 
 
 
- A system composed from components. Arrows pointing in represent input. Arrows pointing out represent output. Outer components called parents process output of inner sub-components. This keeps dependencies pointing inward. With composition of input made inward, and output outward, no inner component is dependent on an outer component until it is in the context of the system. Because the dependencies flow in the direction of composition of the system , the dependencies are inherent in the system itself.
+ In the diagram above arrows pointing in represent input. Arrows pointing out represent output. Outer components are parents, that process output of inner child components. This keeps dependencies pointing inward. With composition of input made inward, and output outward, no inner component is dependent on an outer component until it is in a context. Because the dependencies flow in the direction of composition of the system , the dependencies are inherent in the context itself.
  
- There are two primary underlying principles:
 
-1. Software has three distinct axis: Structure, behavior, and state.
-2. Programming is an art of organization. Good structure supports good organization.
 
-The pattern asserts that an ideal system is composed as one hierarchy of components. 
-
-## What is a component?
-1. A component is any composable type that has input and output, and a process. (note: a component's input and output may be expressed as multiple inputs/outputs, however for reasoning we consider the entire set of inputs and outputs as a whole.)
-2. Child components are inherently dependent on facts provided by it's input.
-3. Parent components are inherently interested in the facts provided by the output of it's children.
-4. Whether or not a component has internal state is irrelevant to the rest of the system.
 
  ![](../resources/images/Composition2.png)
 
