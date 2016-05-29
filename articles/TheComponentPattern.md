@@ -46,12 +46,7 @@ Keep in mind, this is theory. How it is expressed and implemented is flexible.
 ### May 29, 2016
 This is a learning project for me.  These ideas were developed in my own work.  I then discovered others seemingly working on these ideas as well.  I have not seen this pattern spelled out, so I decided to take notes and share the ideas I have. Whether or not it is correct or perfect, I don't know. I iterate ideas by trying to prove them wrong. So far this has proven to be a useful pattern in my work, but it's still evolving.
 
-[Elm](http://elm-lang.org) is a very close implementation of this pattern. [Cycle.js](http://cycle.js.org) is another. [React/Redux](https://facebook.github.io/react/index.html) is also. However in my implementation of this pattern components are not just UI specific. Recently React added higher order components too.
-
-Another interesting similar implementation of this pattern is [Flutter](https://flutter.io). 
-
-The fact that I am seeing others evolve towards this tells me there might be something to it. 
-
+[Elm](http://elm-lang.org) is a very close implementation of this pattern. [Cycle.js](http://cycle.js.org) is another. [React/Redux](https://facebook.github.io/react/index.html) is also. However in my implementation of this pattern components are not just UI specific. Recently React added higher order components too. Another interesting similar implementation of this pattern is [Flutter](https://flutter.io). 
 
 
 ### Feb 11, 2016
