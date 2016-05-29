@@ -27,7 +27,7 @@ The pattern asserts that an ideal system is composed as one hierarchy of compone
 ## Theory
 Components are composed of subcomponents as shown above. A component receives input, some process happens, and it produces output at some point in time.  An entire application is a component that takes it's initial state, and produces new state. 
 
-If we reason about this further, we can determine that any subcomponent of the application is inherently dependent on the application state or the component wouldn't be necessary! In actuality, all components in an application are really a function of the same total state! They are all functions of AppState -> AppState.
+If we reason about this further, we can determine that any sub-component of the application is inherently dependent on the application state or the component wouldn't be necessary! In actuality, all components in an application are really a function of the same total state! They are all functions of AppState -> AppState.
 
 It would not make sense to write every component specific to the application it happens to be in. Components are concerned with doing something specific and we want to re-use them. Therefore we make components that are concerned with only the specific state they are concerned with. But how do we bridge from the parent component's state to it's subcomponents state, and from the subcomponent's output, to the parent component's output?
 
