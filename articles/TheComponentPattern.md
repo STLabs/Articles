@@ -23,13 +23,17 @@ The pattern asserts that an ideal system is composed as one hierarchy of compone
  ![](../resources/images/Composition2.png)
 
 ## Theory
-Components are composed of subcomponents as shown above. A component receives input, some process happens, and it produces output at some point in time.  An entire application is a component that takes it's initial state, and produces new state. 
+Components are composed of sub-components as shown above. The Y axis represents composition. A component receives input, some process happens, and it produces output at some point in time. This is represented by the X axis.
 
-If we reason about this further, we can determine that any sub-component of the application is inherently dependent on the application state or the component wouldn't be necessary! In theory, all components in an application are a function of the same total state. AppState -> AppState.
+### State
 
-It would not make sense to write every component specific to an application. Components do something specific and we want to re-use them. Therefore, we make components work with a specific state. But how do we bridge from the parent component's state to it's subcomponents specific state? 
+Keep in mind, when we talk about state in components we are interested in the transient state. Whether or not a component has internal stored state does not matter.
 
-In theory every subcomponent's input is a mapping of it's parent's state. And every subcomponent's output causes an update to it's parent. In the diagram above this is show in the yellow as Map, and Reduce.
+An entire application is a component that takes it's initial state as input, and produces new state at some point in time. If we reason about this further, we can determine that any sub-component of the application is inherently dependent on the application state or the component wouldn't be necessary! In theory, all components in an application are a function of the same total state. AppState -> AppState.
+
+It would not make sense to write every component specific to an application. Components do something specific and we want to re-use them. Therefore, we make components work with  specific state. But how do we bridge from the parent component's state to it's subcomponents specific state? This is what is most important about this pattern. Where truth comes from, and where resulting updates flow.
+
+In theory every subcomponent's input is a mapping of it's parent's state. And every subcomponent's output causes an update to it's parent. In the diagram above this is shown in the yellow as Map, and Reduce. All child input is a mapping of parent input. Even if the component takes no input, in theory it is a map of ParentState -> (). All child output is a reduce or fold into it's parent's process and may cause the parent to output. So child output is a function of (PreviousParentState, ChildOutput) -> NewParentState
 
 Not all components require input or have output. But it's always in the context of it's parent  that makes their use interesting to the system.
 
