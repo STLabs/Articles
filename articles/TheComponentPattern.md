@@ -9,7 +9,12 @@ The Component Pattern is a pattern in well structured systems. Software systems 
 
  A system composed from components. Arrows pointing in represent inputs. Arrows pointing out represent outputs. Outer components called parents process output of inner child components. This keeps dependencies pointing inward. With composition of input made inward, and output outward, no inner component is dependent on an outer component until it is in the context of the system. Because the dependencies flow in the direction of composition of the system , the dependencies are inherent in the system itself.
  
- ![](../resources/images/Composition2.png)
+ There are two primary underlying principles:
+
+1. Software has three distinct axis: Structure, behavior, and state.
+2. Programming is an art of organization. Good structure supports good organization.
+
+The pattern asserts that an ideal system is composed as one hierarchy of components. 
 
 ## What is a component?
 1. A component is any composable type that has inputs and outputs.
@@ -19,36 +24,10 @@ The Component Pattern is a pattern in well structured systems. Software systems 
 
 
 
-####Components vs. Objects
-
-* a component does not have methods that return values.
-* a component does not have public properties (because that is a method that returns a value.
-![](../resources/images/Components.png)
-
-![](../resources/images/Object.png)
-
-#### Components vs. Functions
-A function is a component with 1 input and 1 output. A component has N inputs, and N outputs.
-
-![](../resources/images/Functions.png)
-
- 
- 
-##Composition
+ ![](../resources/images/Composition2.png)
 
 
-
-There are two primary underlying principles:
-
-1. Software has three distinct axis: Structure, behavior, and state.
-2. Programming is an art of organization. Good structure supports good organization.
-
-The pattern asserts that an ideal system is composed as one hierarchy of components. 
-
-1. There is no separate state or UI tree.
-2. Child components do not dispatch actions specific to the parent, they dispatch processed input, or perhaps no output at all.
-
-Components are composed of subcomponents as shown below. A component has input and output. In this sense a component is similar to a function. It takes input, some process happens, and it produces output.  For example, the entire application is a component that takes it's initial state, and produces new state. State -> State the result is new state.
+Components are composed of subcomponents as shown above. A component has input and output. In this sense a component is similar to a function. It takes input, some process happens, and it produces output.  For example, the entire application is a component that takes it's initial state, and produces new state. State -> State the result is new state.
 
 If we reason about this, we can determine that any child component is inherently dependent on it's parents state or the component wouldn't be necessary in the system. All components in an application are a function of the same total state. Technically they are all functions of AppState -> NewAppState.
 
