@@ -17,30 +17,29 @@ The Component Pattern is a pattern in well structured systems. Software systems 
 The pattern asserts that an ideal system is composed as one hierarchy of components. 
 
 ## What is a component?
-1. A component is any composable type that has inputs and outputs.
+1. A component is any composable type that has input and output, and a proccess. (note: a component's input and output may be expressed as multiple inputs/outputs, however for reasoning we consider the entire set of inputs and outputs as a whole.)
 2. Child components are inherently dependent on facts provided by it's input.
 3. Parent components are inherently interested in the facts provided by the output of it's children.
-4. Whether or not a component has state is irrelevant to the rest of the system. What matters is the output. 
+4. Whether or not a component has internal state is irrelevant to the rest of the system. What matters is the output. 
 
 
 
  ![](../resources/images/Composition2.png)
 
 
-Components are composed of subcomponents as shown above. A component has input and output. In this sense a component is similar to a function. It takes input, some process happens, and it produces output.  For example, the entire application is a component that takes it's initial state, and produces new state. State -> State the result is new state.
 
-If we reason about this, we can determine that any child component is inherently dependent on it's parents state or the component wouldn't be necessary in the system. All components in an application are a function of the same total state. Technically they are all functions of AppState -> NewAppState.
+## Component Theory
+Components are composed of subcomponents as shown above. A component receives input, some process happens, and it produces output at some point in time.  An entire application is a component that takes it's initial state, and produces new state. 
 
-It would not make sense to write every component specific to the application it happens to be in. Therefore we make components that are concerned with only the specific state they require. We call this substate. 
+If we reason about this further, we can determine that any subcomponent of the application is inherently dependent on the application state or the component wouldn't be necessary! In actuality, all components in an application are really a function of the same total state! They are all functions of AppState -> AppState.
 
-Because we know that a particular subcomponent plays some role in input and/or output of the entire application state, we need some way of bridging from the parent component to it's subcomponents.
+It would not make sense to write every component specific to the application it happens to be in. Components are concerned with doing something specific and we want to re-use them. Therefore we make components that are concerned with only the specific state they are concerned with. But how do we bridge from the parent component's state to it's subcomponents state, and from the subcomponent's output, to the parent component's output?
 
-Every subcomponent's input is therefore a mapping of it's parent's state. And every subcomponent's output is a reduction of the previous state, with it's output.
+Every subcomponent's input is a simply a mapping of it's parent's state. And every subcomponent's output is a reduction of the previous state, with it's output.
 
+Although not all components require input or have output. When they do, it is in the context of it's parent that that makes their use interesting to the system.
 
-Although not all components require input or have output. When they do, it is the parent context that is inherently interested them.
-
-
+Keep in mind, this is all theory behind the component pattern. It can be expressed in a flexible way.
 
 ---
 
