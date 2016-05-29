@@ -39,6 +39,8 @@ Keep in mind, this is all theory behind the component pattern. It can be express
 
 ---
 
+## Doesn't this already exist? / Is this even correct?
+I don't know. But I notice a lot of implementations of it, but have not seen anyone spell out a pattern to define the underlying principles. I discovered this in my own work, and then started noticing others seemingly evolving to these ideas as well. Whether or not it is correct or perfect, I don't know that either. I throw ideas out as soon as I prove them wrong. So far this has not been proven to me to be wrong, and I am still experimenting with it.
 
 
 ###Notes:
