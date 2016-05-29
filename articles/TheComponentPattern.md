@@ -35,9 +35,9 @@ It would not make sense to write every component specific to an application. Com
 
 In theory every subcomponent's input is a mapping of it's parent's state. And every subcomponent's output causes an update to it's parent. In the diagram above this is shown in the yellow as Map, and Reduce. All child input is a mapping of parent input. Even if the component takes no input, in theory it is a map of ParentState -> (). All child output is a reduce or fold into it's parent's process and may cause the parent to output. So child output is a function of (PreviousParentState, ChildOutput) -> NewParentState
 
-Not all components require input or have output. But it's always in the context of it's parent  that makes their use interesting to the system.
+Not all components require input or have output. But it's always in the context of it's parent  that makes their use interesting to the application. Maintaining these relationships are the constraints of the pattern.
 
-Keep in mind, this is the theory behind the component pattern. How it is actually expressed or implemented is flexible.
+Keep in mind, this is theory. How it is expressed and implemented is flexible.
 
 ---
 
