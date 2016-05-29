@@ -46,7 +46,7 @@ This is a learning project for me.  I got these ideas from my own work, and then
 
 [Elm](http://elm-lang.org) is a very close implementation of this pattern. [Cycle.js](http://cycle.js.org) is another. [React/Redux](https://facebook.github.io/react/index.html) is also. However in my implementation of this pattern components are not just UI specific. Recently React added higher order components too.
 
-Another interesting simillar implementation of this pattern is [Flutter](https://flutter.io). 
+Another interesting similar implementation of this pattern is [Flutter](https://flutter.io). 
 
 The fact that I am seeing others evolve towards this tells me there might be something to it. 
 
