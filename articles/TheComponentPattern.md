@@ -7,7 +7,7 @@ The Component Pattern is a pattern in well structured systems. Software systems 
 
 
 
- A system composed from components. Arrows pointing in represent inputs. Arrows pointing out represent outputs. Outer components called parents process output of inner child components. This keeps dependencies pointing inward. With composition of input made inward, and output outward, no inner component is dependent on an outer component until it is in the context of the system. Because the dependencies flow in the direction of composition of the system , the dependencies are inherent in the system itself.
+ A system composed from components. Arrows pointing in represent input. Arrows pointing out represent output. Outer components called parents process output of inner sub-components. This keeps dependencies pointing inward. With composition of input made inward, and output outward, no inner component is dependent on an outer component until it is in the context of the system. Because the dependencies flow in the direction of composition of the system , the dependencies are inherent in the system itself.
  
  There are two primary underlying principles:
 
@@ -17,18 +17,16 @@ The Component Pattern is a pattern in well structured systems. Software systems 
 The pattern asserts that an ideal system is composed as one hierarchy of components. 
 
 ## What is a component?
-1. A component is any composable type that has input and output, and a proccess. (note: a component's input and output may be expressed as multiple inputs/outputs, however for reasoning we consider the entire set of inputs and outputs as a whole.)
+1. A component is any composable type that has input and output, and a process. (note: a component's input and output may be expressed as multiple inputs/outputs, however for reasoning we consider the entire set of inputs and outputs as a whole.)
 2. Child components are inherently dependent on facts provided by it's input.
 3. Parent components are inherently interested in the facts provided by the output of it's children.
-4. Whether or not a component has internal state is irrelevant to the rest of the system. What matters is the output. 
-
-
+4. Whether or not a component has internal state is irrelevant to the rest of the system.
 
  ![](../resources/images/Composition2.png)
 
 
 
-## Component Theory
+## Theory
 Components are composed of subcomponents as shown above. A component receives input, some process happens, and it produces output at some point in time.  An entire application is a component that takes it's initial state, and produces new state. 
 
 If we reason about this further, we can determine that any subcomponent of the application is inherently dependent on the application state or the component wouldn't be necessary! In actuality, all components in an application are really a function of the same total state! They are all functions of AppState -> AppState.
