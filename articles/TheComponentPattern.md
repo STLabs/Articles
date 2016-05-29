@@ -27,15 +27,15 @@ The pattern asserts that an ideal system is composed as one hierarchy of compone
 ## Theory
 Components are composed of subcomponents as shown above. A component receives input, some process happens, and it produces output at some point in time.  An entire application is a component that takes it's initial state, and produces new state. 
 
-If we reason about this further, we can determine that any sub-component of the application is inherently dependent on the application state or the component wouldn't be necessary! In actuality, all components in an application are really a function of the same total state! They are all functions of AppState -> AppState.
+If we reason about this further, we can determine that any sub-component of the application is inherently dependent on the application state or the component wouldn't be necessary! In theory, all components in an application are a function of the same total state. AppState -> AppState.
 
-It would not make sense to write every component specific to the application it happens to be in. Components are concerned with doing something specific and we want to re-use them. Therefore we make components that are concerned with only the specific state they are concerned with. But how do we bridge from the parent component's state to it's subcomponents state, and from the subcomponent's output, to the parent component's output?
+It would not make sense to write every component specific to an application. Components do something specific and we want to re-use them. Therefore, we make components work with a specific state. But how do we bridge from the parent component's state to it's subcomponents specific state? 
 
-Every subcomponent's input is a simply a mapping of it's parent's state. And every subcomponent's output is a reduction of the previous state, with it's output.
+In theory every subcomponent's input is a mapping of it's parent's state. And every subcomponent's output causes an update to it's parent. In the diagram above this is show in the yellow as Map, and Reduce.
 
-Although not all components require input or have output. When they do, it is in the context of it's parent that that makes their use interesting to the system.
+Not all components require input or have output. But it's always in the context of it's parent  that makes their use interesting to the system.
 
-Keep in mind, this is all theory behind the component pattern. It can be expressed in a flexible way.
+Keep in mind, this is the theory behind the component pattern. How it is actually expressed or implemented is flexible.
 
 ---
 
