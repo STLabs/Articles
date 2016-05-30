@@ -43,7 +43,7 @@ Keep in mind, this is theory. How it is expressed and implemented is flexible.
 
 ###Messaging and The Significance of an "Output"
 
-#### Why components need outputs, not public methods and properties.
+#### Why components have outputs, not public methods and properties. AKA, why return values are harmful to software structure.
 
 When asked about the meaning of Object Oriented Programming Alan Kay once said: 
 
