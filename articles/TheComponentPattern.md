@@ -56,7 +56,7 @@ So a receiver has to ask another object for it's state when it needs it. The sou
 
 Software is a process so any recorded data in the system is potentially suspect. It's a slice in time. Therefore we are trying to make a process by time slicing back in time often using past truths that may or may not be in sync, hoping that facts are correct.
 
-In OOP objects communicate on the basis of recorded facts. Messaging on the other hand is about communicating the facts as they are true. To that end what is important are the following:
+In OOP objects communicate on the basis of recorded facts. Messaging in the component pattern on the other hand is about communicating the facts as they are true. To that end what is important are the following:
 
 1. The existence of an output in context of some structure. (components) delivered as facts occur.
 2. The intention of the receiver to receive that output as facts occur.
