@@ -1,4 +1,4 @@
-# The Component Pattern
+# The Component Pattern [Beta 0.1]
  There are two primary underlying principles:
 
 1. Software has three distinct axis: structure, behavior, and state.
