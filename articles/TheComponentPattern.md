@@ -35,7 +35,7 @@ An entire application is a component that takes it's initial state as input, and
 
 It would not make sense to write every component specific to an application. Components do something specific and we want to re-use them. Therefore, we make components work with  specific state. But how do we bridge from the parent component's state to it's subcomponents specific state? This is what is most important about this pattern. Where truth comes from, and where resulting updates flow.
 
-In theory every subcomponent's input is a mapping of it's parent's state. And every subcomponent's output causes an update to it's parent. In the diagram above this is shown in the yellow as Map, and Reduce. All child input is a mapping of parent input. Even if the component takes no input, in theory it is a map of ParentState -> (). All child output is a reduce or fold into it's parent's process and may cause the parent to output. So child output is a function of (PreviousParentState, ChildOutput) -> NewParentState
+In theory every subcomponent's input is a mapping of it's parent's state. And every subcomponent's output causes an update to it's parent. In the diagram above this is shown in the yellow as Map, and Reduce. All child input is a mapping of parent input. Even if the component takes no input, in theory it is a map of ParentState -> (). All child output is a reduce or fold into it's parent's process and may cause the parent to output. So parent output is a function of (PreviousParentState, ChildOutput) -> NewParentState
 
 Not all components require input or have output. But it's always in the context of it's parent  that makes their use interesting to the application. Maintaining these relationships are the constraints of the pattern.
 
