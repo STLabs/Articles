@@ -78,7 +78,7 @@ Imagine we have a set of boxes, and in the one side of each box was a fitting la
 
 We also have a set of hoses that can connect to the fittings.  Now if we connect all the boxes together with the hoses, so that when we add input into the outer box, new output comes out the other fitting of the same box. 
 
-You can't stick a hose through the side of the box, reach in and get output, and thread the hose back out the same side. It's physically impossible. Yet that is what we do all the time in software. In the physical world you can't get it wrong, or you can at least easily tell when you do, but in the software world you can get it wrong and it is hard to tell.
+You can't stick a hose through the side of the box, reach in and get output, and thread the hose back out the same side! It's physically impossible. Yet that is what we do all the time in software. In the physical world you can't get it wrong, or you can at least easily tell when you do, but in the software world you can get it wrong and it is hard to tell.
 
 
 ### Feb 11, 2016
