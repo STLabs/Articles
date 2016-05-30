@@ -37,7 +37,7 @@ It would not make sense to write every component specific to an application. Com
 
 In theory every subcomponent's input is a mapping of it's parent's state. And every subcomponent's output causes an update to it's parent. In the diagram above this is shown in the yellow as Map, and Reduce. All child input is a mapping of parent input. Even if the component takes no input, in theory it is a map of ParentState -> (). All child output is a reduce or fold into it's parent's process and may cause the parent to output. So parent output is a function of (PreviousParentState, ChildOutput) -> NewParentState
 
-Not all components require input or have output. But it's always in the context of it's parent  that makes their use interesting to the application. Maintaining these relationships are the constraints of the pattern.
+Not all components require input or have output. But it's always in the context of it's parent  that makes their use interesting to the application. Maintaining these relationships are the constraints of this pattern.
 
 Keep in mind, this is theory. How it is expressed and implemented is flexible.
 
@@ -62,7 +62,6 @@ In OOP objects communicate on the basis of recorded facts. Messaging in the comp
 2. The intention of the receiver to receive that output as facts occur.
 
 Public methods and properties do not provide these, and is why components have outputs.
-
 
 ---
 
