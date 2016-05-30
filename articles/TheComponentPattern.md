@@ -74,9 +74,11 @@ This is a learning project for me.  These ideas were developed in my own work.  
 
 
 ## A thought experiment
-Imagine you had a set of boxes, and in the one side of the box was a fitting labeled input, and on the other side of the box had a fitting labeled output.
+Imagine we had a set of boxes, and in the one side of each box was a fitting labeled input, and on the other side of the box had a fitting labeled output.
 
-Then you had a set of hoses that can connect to the fittings. Each box has a function. Now someone told you to connect all the boxes together with the hoses, so that when you add input into one of the boxes 
+We also have a set of hoses that can connect to the fittings.  Now if we connect all the boxes together with the hoses, so that when we add input into the outer box, new input comes out the out fitting of the same box. 
+
+You can't stick a hose through the side of the box, reach in and get output, and thread the hose back out the same side. It's physically impossible. Yet that is what we do all the time in software. In the physical world you can't get it wrong, or you can at least easily tell when you do, but in the software world you can get it wrong and it is hard to tell.
 
 
 ### Feb 11, 2016
