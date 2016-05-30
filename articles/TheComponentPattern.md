@@ -73,6 +73,12 @@ This is a learning project for me.  These ideas were developed in my own work.  
 [Elm](http://elm-lang.org) is a very close implementation of this pattern. [Cycle.js](http://cycle.js.org) is another. [React/Redux](https://facebook.github.io/react/index.html) is also. However in my implementation of this pattern components are not just UI specific. Recently React added higher order components too. Another interesting similar implementation of this pattern is [Flutter](https://flutter.io). 
 
 
+## A thought experiment
+Imagine you had a set of boxes, and in the one side of the box was a fitting labeled input, and on the other side of the box had a fitting labeled output.
+
+Then you had a set of hoses that can connect to the fittings. Each box has a function. Now someone told you to connect all the boxes together with the hoses, so that when you add input into one of the boxes 
+
+
 ### Feb 11, 2016
 
 I was describing some rules for a UI design pattern and it occurred to me that these rules apply universally to the component pattern.
