@@ -54,7 +54,7 @@ What is wrong with messaging in common OOP is that objects communicate across th
 
 So a receiver has to ask another object for it's state when it needs it. The source of facts sends the state back to caller at the time of request, not at the time of truth.
 
-Software is a process so any recorded data in the system is potentially suspect. It's a slice in time. Therefore we are trying to make a process by time slicing back in time, hoping that facts are correct.
+Software is a process so any recorded data in the system is potentially suspect. It's a slice in time. Therefore we are trying to make a process by time slicing back in time often using past truths that may or may not be in sync, hoping that facts are correct.
 
 In OOP objects communicate on the basis of recorded facts. Messaging on the other hand is about communicating the facts as they are true. To that end what is important are the following:
 
