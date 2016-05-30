@@ -74,7 +74,7 @@ This is a learning project for me.  These ideas were developed in my own work.  
 
 
 ## A thought experiment for fun.
-Imagine we had a set of boxes, and in the one side of each box was a fitting labeled input, and on the other side of the box had a fitting labeled output.
+Imagine we have a set of boxes, and in the one side of each box was a fitting labeled input, and on the other side of the box had a fitting labeled output.
 
 We also have a set of hoses that can connect to the fittings.  Now if we connect all the boxes together with the hoses, so that when we add input into the outer box, new input comes out the out fitting of the same box. 
 
