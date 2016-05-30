@@ -73,7 +73,7 @@ This is a learning project for me.  These ideas were developed in my own work.  
 [Elm](http://elm-lang.org) is a very close implementation of this pattern. [Cycle.js](http://cycle.js.org) is another. [React/Redux](https://facebook.github.io/react/index.html) is also. However in my implementation of this pattern components are not just UI specific. Recently React added higher order components too. Another interesting similar implementation of this pattern is [Flutter](https://flutter.io). 
 
 
-## A thought experiment
+## A thought experiment for fun.
 Imagine we had a set of boxes, and in the one side of each box was a fitting labeled input, and on the other side of the box had a fitting labeled output.
 
 We also have a set of hoses that can connect to the fittings.  Now if we connect all the boxes together with the hoses, so that when we add input into the outer box, new input comes out the out fitting of the same box. 
