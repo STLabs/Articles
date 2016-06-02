@@ -20,7 +20,7 @@ The component pattern is a pattern for creating well structured software. The pa
 1. A component is any composable type  that has input, a process, and output. (note: while a component may have multiple inputs and outputs, for reasoning purposes we consider the entire set of inputs and outputs as a whole.)
 2. Child components are inherently dependent on facts provided by input from it's parent.
 3. Parent components are inherently interested in the facts provided by the output of it's child components.
-4. In the component pattern everything is a component. It is not specific to UI. For example the Application is a component.
+4. In the component pattern everything is a component. It is not specific to UI. For example the application is a component.
 
  ![](../resources/images/Composition2.png)
  
