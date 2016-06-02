@@ -22,7 +22,7 @@ The component pattern is a pattern for creating well structured software. The pa
 3. Parent components are inherently interested in the facts provided by the output of it's child components.
 
 
- ![](../resources/images/Composition2.png)
+ 
  
 **Note: What a component is not:** A component is not UI. The term component is used many times in frameworks (such as React) to be UI specific. In the component pattern a component is not necessarily UI. 
 
