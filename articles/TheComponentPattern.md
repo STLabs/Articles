@@ -28,6 +28,7 @@ The component pattern is a pattern for creating well structured software. The pa
  A component is composed of child components. Each child components input is a mapping of it's parent's input. Each child components output is reduced into the parents process and may produce output. 
  
  Input  = ParentInput -> ChildInput
+ 
  Output = ParentInput, ChildOutput -> ParentOutput? 
  
 ## Theory
