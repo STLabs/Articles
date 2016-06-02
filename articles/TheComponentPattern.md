@@ -32,6 +32,10 @@ Components are composed of sub-components as shown above. The Y axis represents 
  
   -  Output = ParentInput, ChildOutput -> ParentOutput? 
 
+## Three Dimensional DataFlow and Planes of truth.
+
+
+
 ### State
 
 Keep in mind, when we talk about state in components we are interested in the transient state. Whether or not a component has internal stored state does not matter.
