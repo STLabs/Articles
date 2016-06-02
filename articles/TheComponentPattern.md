@@ -17,12 +17,14 @@ The component pattern is a pattern for creating well structured software. The pa
  Components define the structure of software and are are composed together as shown in the diagram above. Arrows pointing in represent input. Arrows pointing out represent output. Outer components are parent components of inner components. This keeps dependencies pointing inward and output outward.  No inner component is dependent on an outer component until it is in the context of it's parent. Because the dependencies flow in the direction of composition of the system , the dependencies are inherent in the system itself.
  
 ## What is a component?
-1. A component is any composable type that has input, a process, and output. (note: while a component may have multiple inputs and outputs, for reasoning purposes we consider the entire set of inputs and outputs as a whole.)
+1. A component is any composable type  that has input, a process, and output. (note: while a component may have multiple inputs and outputs, for reasoning purposes we consider the entire set of inputs and outputs as a whole.)
 2. Child components are inherently dependent on facts provided by input from it's parent.
 3. Parent components are inherently interested in the facts provided by the output of it's child components.
 
 
  ![](../resources/images/Composition2.png)
+ 
+**Note: What a component is not:** A component is not UI. The term component is used many times in frameworks (such as React) to be UI specific. In the component pattern a component is not necessarily UI. 
 
 ## Theory
 Components are composed of sub-components as shown above. The Y axis represents composition. A component receives input, some process happens, and it produces output at some point in time. This is represented by the X axis.
