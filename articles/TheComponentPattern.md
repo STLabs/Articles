@@ -27,9 +27,9 @@ The component pattern is a pattern for creating well structured software. The pa
  ## Composition
  A component is composed of child components. Each child components input is a mapping of it's parent's input. Each child components output is reduced into the parents process and may produce output. 
  
- Input  = ParentInput -> ChildInput
+-  Input  = ParentInput -> ChildInput
  
- Output = ParentInput, ChildOutput -> ParentOutput? 
+-  Output = ParentInput, ChildOutput -> ParentOutput? 
  
 ## Theory
 Components are composed of sub-components as shown above. The Y axis represents composition. A component receives input, some process happens, and it produces output at some point in time. This is represented by the X axis.
