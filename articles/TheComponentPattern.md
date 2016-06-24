@@ -32,7 +32,7 @@ Components are composed of sub-components as shown above. The Y axis represents 
  
   -  Output = ParentInput, ChildOutput -> ParentOutput? 
 
-## Three Dimensional DataFlow and Planes of truth.
+
 
 
 
