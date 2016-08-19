@@ -1,8 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #151515 url("../images/bkg.png") 0 0;
-  color: #eaeaea;
+  color: #000;
   font: 16px;
   line-height: 1.5;
   font-family: 'Source Code Pro', monospace, Terminal, monospace;
@@ -38,7 +37,6 @@ li {
 header {
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
-  border-bottom: 1px dashed #b5e853;
   padding: 20px 0;
   margin: 0 0 40px 0;
 }
@@ -47,9 +45,8 @@ header h1 {
   font-size: 30px;
   line-height: 1.5;
   margin: 0 0 0 -40px;
-  font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #b5e853;
+  color: #000;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
                0 0 10px rgba(181, 232, 83, 0.1);
@@ -64,8 +61,6 @@ header h1:before {
 
 header h2 {
   font-size: 18px;
-  font-weight: 300;
-  color: #666;
 }
 
 #downloads .btn {
@@ -86,13 +81,8 @@ section img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #b5e853;
-  letter-spacing: -0.03em;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
+  font-weight: bold;
+  font-family: 'Source Code Pro', monospace, Terminal, monospace;
 }
 
 #main_content h1 {
