@@ -6,13 +6,7 @@
 
 The component pattern is a pattern for creating well structured software. The pattern asserts that an ideal system is composed as one hierarchy of components, starting with the application component. It is intentionally abstract and doesn't require a library or a framework.
 
- 
-
-
-
 ![](../resources/images/ComponentPattern.jpg)
-
-
 
  Components define the structure of software and are are composed together as shown in the diagram above. Arrows pointing in represent input. Arrows pointing out represent output. Outer components are parent components of inner components. This keeps dependencies pointing inward and output outward.  No inner component is dependent on an outer component until it is in the context of it's parent. Because the dependencies flow in the direction of composition of the system , the dependencies are inherent in the system itself.
  
@@ -24,17 +18,12 @@ The component pattern is a pattern for creating well structured software. The pa
 
  ![](../resources/images/Composition2.png)
  
-
 ## Composition
 Components are composed of sub-components as shown above. The Y axis represents composition. A component receives input, some process happens, and it produces output at some point in time. This is represented by the X axis. Each child components input is a mapping of it's parent's input. Each child components output is reduced into the parents process and may produce output. 
  
   -  Input  = ParentInput -> ChildInput
  
   -  Output = ParentInput, ChildOutput -> ParentOutput? 
-
-
-
-
 
 ### State
 
@@ -120,7 +109,6 @@ We can think of the the component pattern in 3 dimensions.
 1. The Y axis represents composition and data flow from parent to child.
 2. The X axis represents connection and processing on the primary thread. 
 3. The Z axis represents asynchronous processing on a secondary thread, emanating from and back to the XY plane.
-
 
 If a component needs to do asynchronous processing on another thread. The result comes back to the original plane, and output. For example fetching data:
 
