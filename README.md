@@ -1,5 +1,11 @@
-### Articles
-**2016**
+#Journal 
+
+## Daily 
+### 2016
+#### [September](16-09.md)
+
+## Articles
+### 2016
 * [The Component Pattern](articles/TheComponentPattern.md)
 * [Structure Behavior State](articles/StructureBehaviorState.md)
 * [Turning Objects into Functions](articles/TurningObjectsIntoFunctions.md)
