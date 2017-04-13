@@ -45,7 +45,7 @@ Even if the developer pulls the app off the store, existing customers are still 
 
 Paid upgrades with a tie-in to the existing user base is the answer.
 
-######5. Universal Apps / Universal Purchase
+###### 5. Universal Apps / Universal Purchase
 This policy is aimed at bootstrapping new hardware with free and low cost applications on day one on the backs of developers. As devices become more varied and features become more complex, the expense of maintaining the product grows quickly. Developers simply can not just add more device support for free. 
 
 It is not yet clear what ‘universal purchase’ means however I do suspect, and hope universal purchase may actually be a step in the right direction if it works as follows:
