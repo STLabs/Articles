@@ -1,6 +1,8 @@
 # The Component Pattern [Beta 0.1]
 Amber Star - 2016
 
+**Update**: See [The Component Pattern](https://github.com/amberstar/the-component-pattern) for an updated version of this article.
+
  There are two primary underlying principles:
 
 1. Software has three distinct axis: structure, behavior, and state.
