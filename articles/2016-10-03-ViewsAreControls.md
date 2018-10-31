@@ -1,4 +1,5 @@
 # Views are controls
+Amber Star - 2016
 
 Ever wonder why the web seems to have such an elegant architecture? One reason is that the view layer is decoupled from everything else.
 

@@ -1,4 +1,5 @@
 # Turning Objects into Functions
+Amber Star - 2016
 
 I've been pulling on this component oriented programming thread for some time. I've defined a pattern that I am sure creates a sound software compositional model.
 
@@ -6,7 +7,7 @@ At some point I realized that return values on methods are harmful to software s
 
 **Functions**:  
 
-Functions message at the boundaries of composition. You can create pure functions such as `T -> U` below and compose them with the inner function `T -> U`, and create an outer composition such as `T -> V` by combining `T -> U` + `U -> V`. `T -> U` and `U -> V` will never become entangled. Outer `T -> U` and inner `T -> U` have a dependency, but that dependency is inherent in it's composition. For that reason, **this is not entanglement.**
+Functions message at the boundaries of composition. You can create pure functions such as `T -> U` below and compose them with the inner function `T -> U`, and create an outer composition such as `T -> V` by combining `T -> U` + `U -> V`. `T -> U` and `U -> V` will never become entangled. Outer `T -> U` and inner `T -> U` have a dependency, but that dependency is inherent in its composition. For that reason, **this is not entanglement.**
 ![](../resources/images/Composition.png)
 
 **Objects/Methods**:
@@ -22,7 +23,7 @@ The component pattern is stateless. Components only have events. Events can pass
 ###Enter Redux
 At first I did't understand why Redux prefers a state tree over a store tree. I did't see how you would get modularity from that.  But after listening to Dan Abramov's talk [here](https://t.co/oSpw0cjSBf), and watched him refactor a store into a function, then it hit me!
 
-A reducer function is a component. It's a component that has actions because it takes an action as an argument. It's a component that has one event. It's return value. And who get's that return value? It's parent component. (function).
+A reducer function is a component. It's a component that has actions because it takes an action as an argument. It's a component that has one event. Its return value. And who get's that return value? It's parent component. (function).
 
 Redux is the component pattern, only it removes the clutter of objects. And because it is a function, composing is natural. You have to pass the current state in to the reducer along with it's action, but that is better than storing it. State is only a snapshot in time. So anywhere you record state is questionable.
 

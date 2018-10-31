@@ -1,4 +1,5 @@
 # Delegate vs. Observer, It's all messaging
+Amber Star - 2016
 
 Sometimes we tend to get caught up in the words we use. Observers, Delegates, Notifications, Reactive. Sometimes the only difference between these ideas are where the code ends up in the source files. Perhaps that is where we should start to reason about them. What will make the code clearer?
 
@@ -39,7 +40,7 @@ All we need is:
 
 When the model dispatches the state to the view it is updated accordingly. The update is triggered by the `didSet` observer on the `ViewController.state` property. No external observer pattern is necessary. No subscription, no KVO.
 
-We should always try to channel state through a responsible actor in the system. For example, above the `updateViewWithState` method, may forward state to some of it's sub components. Letting a sub-component observe above it's parent is not necessary, and it entangles the structure of the software.
+We should always try to channel state through a responsible actor in the system. For example, above the `updateViewWithState` method, may forward state to some of its sub components. Letting a sub-component observe above its parent is not necessary, and it entangles the structure of the software.
 
 
-Figure out what makes the code clearer. Often you will find that Observer patterns tend to put code in bad places, such as in initialization of views defined in  closures. It may be boring, but there is nothing clearer than a good old type calling a function on another type. Don't give fancy words more meaning then they deserve, it's all just messaging. 
+Figure out what makes the code clearer. Often you will find that Observer patterns tend to put code in bad places, such as in initialization of views defined in  closures. It may be boring, but there is nothing clearer than a good old type calling a function on another type. Don't give fancy words more meaning than they deserve, it's all just messaging. 

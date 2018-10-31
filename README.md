@@ -1,9 +1,4 @@
 #Journal 
-
-## Daily 
-### 2016
-#### [September](16-09.md)
-
 ## Articles
 ### 2016
 * [The Component Pattern](articles/TheComponentPattern.md)

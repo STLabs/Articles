@@ -1,11 +1,11 @@
 # For The Love of Software
-
+Amber Star - 2016
 
 Apple is a company that loves software. As Steve Jobs said it is the "soul" of Apple's products.
 
 > "You know, if the hardware is the brain and the sinew of our products, the software in them is their soul.” - Steve Jobs
 
-There is something about elegant and robust software that makes a computing device more than the sum of it's parts. It turns hardware into tools that get real work done. In the early days, solutions like AutoCad, WordPerfect, and Lotus 123 were enough alone to buy expensive hardware. 
+There is something about elegant and robust software that makes a computing device more than the sum of its parts. It turns hardware into tools that get real work done. In the early days, solutions like AutoCad, WordPerfect, and Lotus 123 were enough alone to buy expensive hardware. 
 
 
 Although today we use our mobile devices mostly for communication and entertainment, when email is launched, the device becomes email. When maps is launched the device becomes a navigator.  It's the killer apps that make having the device worthwhile. What each of us want from our device is different and the applications that we need, use, and love are what personalize it for us.
